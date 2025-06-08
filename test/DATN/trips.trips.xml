@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-20 01:07:21.306481 by randomTrips.py v1_22_0+0002-63e50f52594
+<configuration>
+    <net-file value=".\datn.net.xml"/>
+    <additional-files value=".\vehicles.vtype.xml"/>
+    <weights-prefix value="./weights_vehicle/truck"/>
+    <route-file value="./trips_vehicle/truck.rou.xml"/>
+    <prefix value="3"/>
+    <trip-attributes value="type=&quot;truck&quot;"/>
+    <seed value="1"/>
+    <random value="True"/>
+    <end value="10000.0"/>
+    <insertion-rate value="4.0"/>
+    <random-depart value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="30" depart="2963.00" from="HQC_J4_J3" to="PVB_J3_J1" type="truck"/>
+    <trip id="31" depart="3528.00" from="PVB_J6_J3" to="HQC_J3_J4" type="truck"/>
+    <trip id="32" depart="3560.00" from="PVB_J0_J3" to="HQC_J3_J4" type="truck"/>
+    <trip id="33" depart="3847.00" from="PVB_J6_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="34" depart="4369.00" from="HQC_J4_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="35" depart="4591.00" from="PVB_J6_J3" to="HQC_J3_J4" type="truck"/>
+    <trip id="36" depart="6296.00" from="HQC_J2_J3" to="PVB_J3_J1" type="truck"/>
+    <trip id="37" depart="6518.00" from="PVB_J0_J3" to="PVB_J3_J1" type="truck"/>
+    <trip id="38" depart="7655.00" from="HQC_J2_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="39" depart="7831.00" from="PVB_J0_J3" to="HQC_J3_J2" type="truck"/>
+    <trip id="310" depart="8531.00" from="PVB_J0_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="311" depart="8546.00" from="HQC_J4_J3" to="PVB_J3_J1" type="truck"/>
+</routes>

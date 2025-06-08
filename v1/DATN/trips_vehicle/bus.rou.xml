@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-06-02 00:19:15.661095 by randomTrips.py v1_22_0+0002-63e50f52594
+<configuration>
+    <net-file value=".\datn.net.xml"/>
+    <additional-files value=".\vehicles.vtype.xml"/>
+    <weights-prefix value="./weights_vehicle/bus"/>
+    <route-file value="./trips_vehicle/bus.rou.xml"/>
+    <prefix value="2"/>
+    <trip-attributes value="type=&quot;bus&quot;"/>
+    <seed value="1"/>
+    <random value="True"/>
+    <end value="10000.0"/>
+    <insertion-rate value="50.0"/>
+    <random-depart value="True"/>
+</configuration>
+-->
+
+<!-- generated on 2025-06-02 00:19:15 by Eclipse SUMO duarouter Version 1.22.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value=".\datn.net.xml"/>
+        <additional-files value=".\vehicles.vtype.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="./trips_vehicle/bus.rou.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="10000.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="bus" length="12.00" minGap="3.00" maxSpeed="80.00" speedFactor="normc(1.00,0.05,0.20,2.00)" vClass="bus" lcStrategic="1.0" lcCooperative="0.8" lcSpeedGain="0.8" lcKeepRight="1.2" lcSublane="0.0" lcPushy="0.3" lcAssertive="1.0" lcAccelLat="0.8" jmCrossingGap="4.0" jmIgnoreKeepClearTime="15" jmIgnoreFoeProb="0.05" accel="1.5" decel="4.0" emergencyDecel="7.0" sigma="0.2" tau="1.6"/>
+    <vehicle id="20" type="bus" depart="145.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="21" type="bus" depart="234.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="22" type="bus" depart="267.00">
+        <route edges="HQC_J4_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="23" type="bus" depart="346.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="24" type="bus" depart="484.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="25" type="bus" depart="500.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="26" type="bus" depart="601.00">
+        <route edges="HQC_J4_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="27" type="bus" depart="603.00">
+        <route edges="HQC_J2_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="29" type="bus" depart="829.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="210" type="bus" depart="907.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="212" type="bus" depart="981.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="213" type="bus" depart="1000.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="214" type="bus" depart="1031.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="215" type="bus" depart="1079.00">
+        <route edges="HQC_J2_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="216" type="bus" depart="1171.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="217" type="bus" depart="1171.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="218" type="bus" depart="1244.00">
+        <route edges="PVB_J6_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="219" type="bus" depart="1256.00">
+        <route edges="HQC_J4_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="220" type="bus" depart="1285.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="222" type="bus" depart="1393.00">
+        <route edges="PVB_J6_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="223" type="bus" depart="1449.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="224" type="bus" depart="1683.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="225" type="bus" depart="1716.00">
+        <route edges="HQC_J4_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="226" type="bus" depart="1737.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="227" type="bus" depart="1779.00">
+        <route edges="PVB_J6_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="228" type="bus" depart="1827.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="229" type="bus" depart="1848.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="230" type="bus" depart="1933.00">
+        <route edges="HQC_J4_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="231" type="bus" depart="2040.00">
+        <route edges="PVB_J0_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="232" type="bus" depart="2108.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="233" type="bus" depart="2143.00">
+        <route edges="HQC_J4_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="234" type="bus" depart="2157.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="235" type="bus" depart="2347.00">
+        <route edges="PVB_J6_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="236" type="bus" depart="2757.00">
+        <route edges="PVB_J0_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="237" type="bus" depart="2809.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="239" type="bus" depart="2885.00">
+        <route edges="HQC_J4_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="240" type="bus" depart="2900.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="241" type="bus" depart="3073.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="242" type="bus" depart="3231.00">
+        <route edges="HQC_J4_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="244" type="bus" depart="3408.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="247" type="bus" depart="3729.00">
+        <route edges="HQC_J4_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="249" type="bus" depart="3803.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="250" type="bus" depart="3812.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="253" type="bus" depart="4246.00">
+        <route edges="PVB_J6_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="254" type="bus" depart="4425.00">
+        <route edges="HQC_J4_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="255" type="bus" depart="4442.00">
+        <route edges="HQC_J4_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="256" type="bus" depart="4515.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="258" type="bus" depart="4621.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="260" type="bus" depart="4782.00">
+        <route edges="HQC_J2_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="261" type="bus" depart="4901.00">
+        <route edges="HQC_J4_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="262" type="bus" depart="4903.00">
+        <route edges="HQC_J4_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="263" type="bus" depart="5052.00">
+        <route edges="HQC_J4_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="264" type="bus" depart="5055.00">
+        <route edges="HQC_J2_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="265" type="bus" depart="5091.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="267" type="bus" depart="5289.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="270" type="bus" depart="5575.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="271" type="bus" depart="5579.00">
+        <route edges="PVB_J6_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="272" type="bus" depart="5629.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="274" type="bus" depart="5917.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="275" type="bus" depart="5941.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="276" type="bus" depart="5954.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="277" type="bus" depart="5996.00">
+        <route edges="HQC_J4_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="278" type="bus" depart="6103.00">
+        <route edges="PVB_J0_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="279" type="bus" depart="6112.00">
+        <route edges="HQC_J4_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="280" type="bus" depart="6172.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="281" type="bus" depart="6215.00">
+        <route edges="HQC_J4_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="282" type="bus" depart="6246.00">
+        <route edges="PVB_J6_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="283" type="bus" depart="6308.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="285" type="bus" depart="6389.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="286" type="bus" depart="6422.00">
+        <route edges="HQC_J4_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="287" type="bus" depart="6527.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="289" type="bus" depart="6722.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="290" type="bus" depart="6727.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="291" type="bus" depart="6802.00">
+        <route edges="PVB_J0_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="292" type="bus" depart="6827.00">
+        <route edges="PVB_J6_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="293" type="bus" depart="6888.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="294" type="bus" depart="7018.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="296" type="bus" depart="7063.00">
+        <route edges="HQC_J2_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2100" type="bus" depart="7323.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="2101" type="bus" depart="7524.00">
+        <route edges="PVB_J6_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="2102" type="bus" depart="7613.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2103" type="bus" depart="7613.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="2105" type="bus" depart="7697.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="2106" type="bus" depart="7710.00">
+        <route edges="HQC_J2_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2107" type="bus" depart="7760.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="2108" type="bus" depart="7855.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="2109" type="bus" depart="7936.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="2110" type="bus" depart="7977.00">
+        <route edges="HQC_J4_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="2111" type="bus" depart="8003.00">
+        <route edges="PVB_J6_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="2112" type="bus" depart="8277.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="2113" type="bus" depart="8338.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="2114" type="bus" depart="8372.00">
+        <route edges="PVB_J6_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="2115" type="bus" depart="8386.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="2116" type="bus" depart="8432.00">
+        <route edges="HQC_J4_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="2117" type="bus" depart="8443.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="2118" type="bus" depart="8466.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="2119" type="bus" depart="8602.00">
+        <route edges="HQC_J2_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2120" type="bus" depart="8633.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="2121" type="bus" depart="8654.00">
+        <route edges="PVB_J6_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="2123" type="bus" depart="8944.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="2124" type="bus" depart="8967.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2125" type="bus" depart="9019.00">
+        <route edges="HQC_J4_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2126" type="bus" depart="9150.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2127" type="bus" depart="9154.00">
+        <route edges="PVB_J0_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="2128" type="bus" depart="9247.00">
+        <route edges="HQC_J2_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2129" type="bus" depart="9333.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="2130" type="bus" depart="9405.00">
+        <route edges="PVB_J0_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="2131" type="bus" depart="9426.00">
+        <route edges="HQC_J4_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2132" type="bus" depart="9534.00">
+        <route edges="HQC_J2_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="2133" type="bus" depart="9569.00">
+        <route edges="HQC_J4_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="2134" type="bus" depart="9729.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2135" type="bus" depart="9772.00">
+        <route edges="HQC_J2_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="2138" type="bus" depart="9946.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+</routes>

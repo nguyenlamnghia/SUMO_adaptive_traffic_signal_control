@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-20 01:07:21.503391 by randomTrips.py v1_22_0+0002-63e50f52594
+<configuration>
+    <net-file value=".\datn.net.xml"/>
+    <additional-files value=".\vehicles.vtype.xml"/>
+    <weights-prefix value="./weights_vehicle/truck"/>
+    <route-file value="./trips_vehicle/truck.rou.xml"/>
+    <prefix value="3"/>
+    <trip-attributes value="type=&quot;truck&quot;"/>
+    <seed value="1"/>
+    <random value="True"/>
+    <end value="10000.0"/>
+    <insertion-rate value="4.0"/>
+    <random-depart value="True"/>
+</configuration>
+-->
+
+<!-- generated on 2025-05-20 01:07:21 by Eclipse SUMO duarouter Version 1.22.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value=".\datn.net.xml"/>
+        <additional-files value=".\vehicles.vtype.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="./trips_vehicle/truck.rou.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="10000.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="truck" length="7.00" minGap="1.20" maxSpeed="10.00" vClass="truck" lcStrategic="0.7" lcCooperative="0.7" lcSpeedGain="0.3" lcKeepRight="0.0" lcAssertive="50" jmDriveAfterRedTime="1" carFollowModel="IDM" accel="1.5" decel="3.0" tau="1.2">
+        <param key="impatience" value="0.3"/>
+    </vType>
+    <vehicle id="30" type="truck" depart="2963.00">
+        <route edges="HQC_J4_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="31" type="truck" depart="3528.00">
+        <route edges="PVB_J6_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="32" type="truck" depart="3560.00">
+        <route edges="PVB_J0_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="34" type="truck" depart="4369.00">
+        <route edges="HQC_J4_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="35" type="truck" depart="4591.00">
+        <route edges="PVB_J6_J3 HQC_J3_J4"/>
+    </vehicle>
+    <vehicle id="36" type="truck" depart="6296.00">
+        <route edges="HQC_J2_J3 PVB_J3_J1"/>
+    </vehicle>
+    <vehicle id="38" type="truck" depart="7655.00">
+        <route edges="HQC_J2_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="39" type="truck" depart="7831.00">
+        <route edges="PVB_J0_J3 HQC_J3_J2"/>
+    </vehicle>
+    <vehicle id="310" type="truck" depart="8531.00">
+        <route edges="PVB_J0_J3 PVB_J3_J5"/>
+    </vehicle>
+    <vehicle id="311" type="truck" depart="8546.00">
+        <route edges="HQC_J4_J3 PVB_J3_J1"/>
+    </vehicle>
+</routes>

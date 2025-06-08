@@ -1,0 +1,3 @@
+Thời gian chờ trung bình: 58.56 giây
+Thời gian di chuyển trung bình: 102.44 giây
+Tốc độ trung bình: 28.16 km/h

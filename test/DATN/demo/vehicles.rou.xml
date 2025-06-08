@@ -1,0 +1,67 @@
+<additional>
+    <!-- Xe máy (70%) -->
+    <vType id="motorcycle" vClass="motorcycle"
+           accel="3.0" decel="6.0" sigma="1.2" tau="0.5"
+           length="1.8" minGap="0.2" maxSpeed="15"
+           lcStrategic="1.0" lcCooperative="0.0" lcKeepRight="0.0" lcSpeedGain="1.0"
+           lcAssertive="10" lcImpatience="1.0"
+           jmDriveAfterRedTime="10"
+           jmIgnoreKeepClearTime="10"
+           jmIgnoreFoeProb="0.8"
+           jmIgnoreJunctionFoeProb="0.8"/>
+
+    <!-- Ô tô (25%) -->
+    <vType id="car" vClass="passenger"
+           accel="2.5" decel="4.5" sigma="1.0" tau="0.7"
+           length="4.3" minGap="0.7" maxSpeed="15"
+           lcStrategic="1.0" lcCooperative="0.0" lcKeepRight="0.0" lcSpeedGain="1.0"
+           lcAssertive="7" lcImpatience="0.8"
+           jmDriveAfterRedTime="5"
+           jmIgnoreKeepClearTime="10"
+           jmIgnoreFoeProb="0.7"
+           jmIgnoreJunctionFoeProb="0.7"/>
+
+    <!-- Xe buýt (3%) -->
+    <vType id="bus" vClass="bus"
+           accel="1.5" decel="3.0" sigma="0.7" tau="1"
+           length="12.0" minGap="1.2" maxSpeed="12"
+           lcStrategic="1.0" lcCooperative="0.0" lcKeepRight="0.0" lcSpeedGain="1.0"
+           lcAssertive="5" lcImpatience="0.6"
+           jmDriveAfterRedTime="3"
+           jmIgnoreKeepClearTime="10"
+           jmIgnoreFoeProb="0.5"
+           jmIgnoreJunctionFoeProb="0.5"/>
+
+    <!-- Xe tải (2%) -->
+    <vType id="truck" vClass="truck"
+           accel="1.2" decel="2.5" sigma="0.7" tau="1"
+           length="7.0" minGap="1.0" maxSpeed="10"
+           lcStrategic="1.0" lcCooperative="0.0" lcKeepRight="0.0" lcSpeedGain="1.0"
+           lcAssertive="5" lcImpatience="0.5"
+           jmDriveAfterRedTime="3"
+           jmIgnoreKeepClearTime="10"
+           jmIgnoreFoeProb="0.5"
+           jmIgnoreJunctionFoeProb="0.5"/>
+</additional>
+
+<!-- <additional>
+    <!-- Xe máy (70%) -->
+    <vType id="motorcycle" vClass="motorcycle" 
+           accel="3.0" decel="6.0" sigma="0.8" 
+           length="1.8" minGap="0.5" maxSpeed="15"/>
+    
+    <!-- Ô tô (25%) -->
+    <vType id="car" vClass="passenger" 
+           accel="2.5" decel="4.5" sigma="0.7" 
+           length="4.3" minGap="1.5" maxSpeed="15"/>
+    
+    <!-- Xe buýt (3%) -->
+    <vType id="bus" vClass="bus" 
+           accel="1.5" decel="3.0" sigma="0.5" 
+           length="12.0" minGap="2.5" maxSpeed="12"/>
+    
+    <!-- Xe tải (2%) -->
+    <vType id="truck" vClass="truck" 
+           accel="1.2" decel="2.5" sigma="0.4" 
+           length="7.0" minGap="3.0" maxSpeed="10"/>
+</additional> -->

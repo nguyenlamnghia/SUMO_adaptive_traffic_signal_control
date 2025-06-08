@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-10 11:51:05 by Eclipse SUMO netedit Version 1.22.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="bus" length="12.00" minGap="2.50" maxSpeed="12.00" vClass="bus" accel="1.5" decel="3.0" sigma="0.5"/>
+    <vType id="car" length="4.30" minGap="1.50" maxSpeed="15.00" vClass="passenger" accel="2.5" decel="4.5" sigma="0.7"/>
+    <vType id="motorcycle" length="1.80" minGap="0.50" maxSpeed="15.00" vClass="motorcycle" accel="3.0" decel="6.0" sigma="0.8"/>
+    <vType id="truck" length="7.00" minGap="3.00" maxSpeed="10.00" vClass="truck" accel="1.2" decel="2.5" sigma="0.4"/>
+</routes>

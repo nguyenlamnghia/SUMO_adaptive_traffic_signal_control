@@ -1,0 +1,7 @@
+python 'C:\Program Files (x86)\Eclipse\Sumo\tools\randomTrips.py' --random -n .\datn.net.xml -r ./trips_vehicle/motorcycle.rou.xml --seed 1 --insertion-rate 3200 --trip-attributes='type=\"motorcycle\"' --additional-file .\vehicles.vtype.xml --weights-prefix ./weights_vehicle/motorcycle --prefix 0 --random-depart -e 10000
+
+python 'C:\Program Files (x86)\Eclipse\Sumo\tools\randomTrips.py' --random -n .\datn.net.xml -r ./trips_vehicle/passenger.rou.xml --seed 1 --insertion-rate 800 --trip-attributes='type=\"passenger\"' --additional-file .\vehicles.vtype.xml --weights-prefix ./weights_vehicle/passenger --prefix 1 --random-depart -e 10000
+
+python 'C:\Program Files (x86)\Eclipse\Sumo\tools\randomTrips.py' --random -n .\datn.net.xml -r ./trips_vehicle/bus.rou.xml --seed 1 --insertion-rate 25 --trip-attributes='type=\"bus\"' --additional-file .\vehicles.vtype.xml --weights-prefix ./weights_vehicle/bus --prefix 2 --random-depart -e 10000
+
+python 'C:\Program Files (x86)\Eclipse\Sumo\tools\randomTrips.py' --random -n .\datn.net.xml -r ./trips_vehicle/truck.rou.xml --seed 1 --insertion-rate 4 --trip-attributes='type=\"truck\"' --additional-file .\vehicles.vtype.xml --weights-prefix ./weights_vehicle/truck --prefix 3 --random-depart -e 10000

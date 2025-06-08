@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-06-02 00:19:16.693591 by randomTrips.py v1_22_0+0002-63e50f52594
+<configuration>
+    <net-file value=".\datn.net.xml"/>
+    <additional-files value=".\vehicles.vtype.xml"/>
+    <weights-prefix value="./weights_vehicle/truck"/>
+    <route-file value="./trips_vehicle/truck.rou.xml"/>
+    <prefix value="3"/>
+    <trip-attributes value="type=&quot;truck&quot;"/>
+    <seed value="1"/>
+    <random value="True"/>
+    <end value="10000.0"/>
+    <insertion-rate value="8.0"/>
+    <random-depart value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="30" depart="106.00" from="PVB_J0_J3" to="HQC_J3_J2" type="truck"/>
+    <trip id="31" depart="241.00" from="HQC_J4_J3" to="PVB_J3_J1" type="truck"/>
+    <trip id="32" depart="352.00" from="PVB_J0_J3" to="HQC_J3_J2" type="truck"/>
+    <trip id="33" depart="1413.00" from="PVB_J6_J3" to="PVB_J3_J1" type="truck"/>
+    <trip id="34" depart="1426.00" from="PVB_J6_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="35" depart="1660.00" from="HQC_J4_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="36" depart="1888.00" from="HQC_J4_J3" to="HQC_J3_J4" type="truck"/>
+    <trip id="37" depart="2145.00" from="PVB_J6_J3" to="HQC_J3_J4" type="truck"/>
+    <trip id="38" depart="2473.00" from="HQC_J2_J3" to="HQC_J3_J4" type="truck"/>
+    <trip id="39" depart="2789.00" from="PVB_J0_J3" to="HQC_J3_J2" type="truck"/>
+    <trip id="310" depart="3299.00" from="PVB_J6_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="311" depart="4820.00" from="HQC_J2_J3" to="HQC_J3_J4" type="truck"/>
+    <trip id="312" depart="5673.00" from="HQC_J4_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="313" depart="5768.00" from="PVB_J6_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="314" depart="5781.00" from="HQC_J2_J3" to="HQC_J3_J2" type="truck"/>
+    <trip id="315" depart="6483.00" from="HQC_J4_J3" to="PVB_J3_J1" type="truck"/>
+    <trip id="316" depart="6544.00" from="HQC_J2_J3" to="HQC_J3_J4" type="truck"/>
+    <trip id="317" depart="6607.00" from="PVB_J6_J3" to="HQC_J3_J2" type="truck"/>
+    <trip id="318" depart="6957.00" from="PVB_J0_J3" to="HQC_J3_J4" type="truck"/>
+    <trip id="319" depart="8583.00" from="PVB_J6_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="320" depart="8927.00" from="PVB_J0_J3" to="HQC_J3_J2" type="truck"/>
+    <trip id="321" depart="8931.00" from="PVB_J6_J3" to="PVB_J3_J5" type="truck"/>
+    <trip id="322" depart="9070.00" from="PVB_J0_J3" to="HQC_J3_J4" type="truck"/>
+</routes>

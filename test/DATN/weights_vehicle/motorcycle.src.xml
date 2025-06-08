@@ -1,0 +1,8 @@
+<edgedata>
+  <interval begin="0" end="10000"/>
+    <edge id="PVB_J0_J3" value="0.383847833"/>
+    <edge id="HQC_J2_J3" value="0.148581229"/>
+    <edge id="PVB_J6_J3" value="0.383847833"/>
+    <edge id="HQC_J4_J3" value="0.083723106"/>
+  </interval>
+</edgedata>

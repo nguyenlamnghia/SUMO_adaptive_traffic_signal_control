@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-13 09:05:03.609527 by randomTrips.py v1_22_0+0002-63e50f52594
+<configuration>
+    <net-file value=".\datn.net.xml"/>
+    <additional-files value=".\vehicles.vtype.xml"/>
+    <output-trip-file value="bus.rou.xml"/>
+    <prefix value="2"/>
+    <trip-attributes value="type=&quot;bus&quot;"/>
+    <seed value="1"/>
+    <random value="True"/>
+    <validate value="True"/>
+    <insertion-rate value="19.0"/>
+</configuration>
+-->
+
+<!-- generated on 2025-05-13 09:05:03 by Eclipse SUMO duarouter Version 1.22.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value=".\datn.net.xml"/>
+        <additional-files value=".\vehicles.vtype.xml"/>
+        <route-files value="bus.rou.xml"/>
+    </input>
+
+    <output>
+        <output-file value="bus.rou.xml.tmp"/>
+        <alternatives-output value="NUL"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- <vType id="bus" length="12.00" minGap="1.00" maxSpeed="12.00" vClass="bus" lcStrategic="0.8" lcCooperative="0.8" lcSpeedGain="0.2" lcKeepRight="0.0" lcAssertive="40" carFollowModel="IDM" accel="1.7" decel="3.5" tau="1.0"/> -->
+    <trip id="20" type="bus" depart="0.00" from="E0" to="-E3"/>
+    <trip id="22" type="bus" depart="378.95" from="E2" to="-E3"/>
+    <trip id="24" type="bus" depart="757.89" from="E0" to="E4"/>
+    <trip id="25" type="bus" depart="947.37" from="E0" to="-E3"/>
+    <trip id="26" type="bus" depart="1136.84" from="E0" to="-E3"/>
+    <trip id="27" type="bus" depart="1326.32" from="E0" to="-E2"/>
+    <trip id="210" type="bus" depart="1894.74" from="E3" to="E4"/>
+    <trip id="211" type="bus" depart="2084.21" from="E5" to="-E2"/>
+    <trip id="213" type="bus" depart="2463.16" from="E2" to="E4"/>
+    <trip id="214" type="bus" depart="2652.63" from="E3" to="E4"/>
+    <trip id="215" type="bus" depart="2842.11" from="E3" to="E4"/>
+    <trip id="216" type="bus" depart="3031.58" from="E3" to="-E2"/>
+    <trip id="217" type="bus" depart="3221.05" from="E5" to="-E3"/>
+    <trip id="218" type="bus" depart="3410.53" from="E2" to="E1"/>
+</routes>

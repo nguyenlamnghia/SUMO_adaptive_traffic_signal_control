@@ -1,0 +1,95 @@
+<vehicles>
+       <vType id="motorcycle" vClass="motorcycle" carFollowModel="IDM"
+              accel="3.2" decel="7.0" sigma="0.5"
+              length="1.8" minGap="0.7" maxSpeed="16"
+              tau="0.5"
+              lcStrategic="1.0" lcCooperative="0.5"
+              lcSpeedGain="1.0" lcKeepRight="0.0"
+              lcAssertive="120"
+              jmIgnoreKeepClear="1"
+              jmDriveAfterRedTime="1">
+              <param key="minGapLat" value="0.0"/>
+              <param key="has.lateral.device" value="1"/>
+              <param key="latAlignment" value="right"/>
+              <param key="impatience" value="1.0"/>
+       </vType>
+
+       <vType id="passenger" vClass="passenger" carFollowModel="IDM"
+              accel="2.5" decel="5.0" sigma="0.4"
+              length="4.3" minGap="1.2" maxSpeed="15"
+              tau="1.0"
+              lcStrategic="1.0" lcCooperative="0.3"
+              lcSpeedGain="0.8" lcKeepRight="0.0"
+              lcAssertive="90"
+              jmIgnoreKeepClear="1"
+              jmDriveAfterRedTime="1">
+              <param key="minGapLat" value="0.0"/>
+              <param key="has.lateral.device" value="1"/>
+              <param key="latAlignment" value="right"/>
+              <param key="impatience" value="0.8"/>
+       </vType>
+    <!-- Xe buýt (3%) -->
+    <vType id="bus" vClass="bus" carFollowModel="IDM"
+           accel="1.7" decel="3.5" sigma="0.5"
+           length="12.0" minGap="1.5" maxSpeed="12"
+           tau="1.0"
+           lcStrategic="0.8" lcCooperative="0.8"
+           lcSpeedGain="0.2" lcKeepRight="0.0"
+           lcAssertive="50"
+           jmDriveAfterRedTime="1">
+        <param key="impatience" value="0.4"/>
+    </vType>
+
+    <!-- Xe tải (2%) -->
+    <vType id="truck" vClass="truck" carFollowModel="IDM"
+           accel="1.5" decel="3.0" sigma="0.5"
+           length="7.0" minGap="1.2" maxSpeed="10"
+           tau="1.2"
+           lcStrategic="0.7" lcCooperative="0.7"
+           lcSpeedGain="0.3" lcKeepRight="0.0"
+           lcAssertive="50"
+           jmDriveAfterRedTime="1">
+        <param key="impatience" value="0.3"/>
+    </vType>
+</vehicles>
+
+<!-- <vehicles>
+    <vType id="motorcycle" vClass="motorcycle" carFollowModel="IDM"
+           accel="3.5" decel="7.0" sigma="1.0"
+           length="1.8" minGap="0.2" maxSpeed="17"
+           tau="0.3"
+           lcStrategic="1.0" lcCooperative="0.2"
+           lcSpeedGain="1.0" lcKeepRight="0.0"
+           lcAssertive="85"
+           jmIgnoreKeepClear="1"
+           jmDriveAfterRedTime="10">
+        <param key="minGapLat" value="0.0"/>
+        <param key="has.lateral.device" value="1"/>
+    </vType>
+
+    <vType id="passenger" vClass="passenger" carFollowModel="IDM"
+           accel="2.8" decel="6.0" sigma="1.0"
+           length="4.3" minGap="0.6" maxSpeed="16"
+           tau="0.5"
+           lcStrategic="1.0" lcCooperative="0.3"
+           lcSpeedGain="0.8" lcKeepRight="0.0"
+           lcAssertive="70"
+           jmIgnoreKeepClear="1"
+           jmDriveAfterRedTime="5"/>
+
+    <vType id="bus" vClass="bus" carFollowModel="IDM"
+           accel="1.7" decel="3.5" sigma="0.8"
+           length="12.0" minGap="1.0" maxSpeed="12"
+           tau="1.0"
+           lcStrategic="0.8" lcCooperative="0.8"
+           lcSpeedGain="0.2" lcKeepRight="0.0"
+           lcAssertive="40"/>
+
+    <vType id="truck" vClass="truck" carFollowModel="IDM"
+           accel="1.5" decel="3.0" sigma="0.8"
+           length="7.0" minGap="1.0" maxSpeed="10"
+           tau="1.2"
+           lcStrategic="0.7" lcCooperative="0.7"
+           lcSpeedGain="0.3" lcKeepRight="0.0"
+           lcAssertive="35"/>
+</vehicles> -->

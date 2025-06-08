@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-13 09:05:28.392817 by randomTrips.py v1_22_0+0002-63e50f52594
+<configuration>
+    <net-file value=".\datn.net.xml"/>
+    <additional-files value=".\vehicles.vtype.xml"/>
+    <output-trip-file value="truck.rou.xml"/>
+    <prefix value="3"/>
+    <trip-attributes value="type=&quot;truck&quot;"/>
+    <seed value="1"/>
+    <random value="True"/>
+    <validate value="True"/>
+    <insertion-rate value="4.0"/>
+</configuration>
+-->
+
+<!-- generated on 2025-05-13 09:05:28 by Eclipse SUMO duarouter Version 1.22.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value=".\datn.net.xml"/>
+        <additional-files value=".\vehicles.vtype.xml"/>
+        <route-files value="truck.rou.xml"/>
+    </input>
+
+    <output>
+        <output-file value="truck.rou.xml.tmp"/>
+        <alternatives-output value="NUL"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- <vType id="truck" length="7.00" minGap="1.00" maxSpeed="10.00" vClass="truck" lcStrategic="0.7" lcCooperative="0.7" lcSpeedGain="0.3" lcKeepRight="0.0" lcAssertive="35" carFollowModel="IDM" accel="1.5" decel="3.0" tau="1.2"/> -->
+    <trip id="30" type="truck" depart="0.00" from="E5" to="E1"/>
+    <trip id="33" type="truck" depart="2700.00" from="E2" to="E1"/>
+</routes>

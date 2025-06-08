@@ -1,0 +1,22 @@
+<routes>
+    <flow id="flow1" type="car" from="HQC_J4_J3" begin="0" end="7200" vehsPerHour="254"/>
+    <flow id="flow2" type="motorbike" from="HQC_J4_J3" begin="0" end="7200" vehsPerHour="525"/>
+    <flow id="flow3" type="bus" from="HQC_J4_J3" begin="0" end="7200" vehsPerHour="5"/>
+    <flow id="flow4" type="truck" from="HQC_J4_J3" begin="0" end="7200" vehsPerHour="1"/>
+
+    <flow id="flow5" type="car" from="HQC_J2_J3" begin="0" end="7200" vehsPerHour="280"/>
+    <flow id="flow6" type="motorbike" from="HQC_J2_J3" begin="0" end="7200" vehsPerHour="612"/>
+    <flow id="flow7" type="bus" from="HQC_J2_J3" begin="0" end="7200" vehsPerHour="6"/>
+    <flow id="flow8" type="truck" from="HQC_J2_J3" begin="0" end="7200" vehsPerHour="2"/>
+
+    <flow id="flow9" type="car" from="PVB_J6_J3" begin="0" end="7200" vehsPerHour="500"/>
+    <flow id="flow10" type="motorbike" from="PVB_J6_J3" begin="0" end="7200" vehsPerHour="2500"/>
+    <flow id="flow11" type="bus" from="PVB_J6_J3" begin="0" end="7200" vehsPerHour="4"/>
+    <flow id="flow12" type="truck" from="PVB_J6_J3" begin="0" end="7200" vehsPerHour="6"/>
+
+    <flow id="flow13" type="car" from="PVB_J0_J3" begin="0" end="7200" vehsPerHour="455"/>
+    <flow id="flow14" type="motorbike" from="PVB_J0_J3" begin="0" end="7200" vehsPerHour="2235"/>
+    <flow id="flow15" type="bus" from="PVB_J0_J3" begin="0" end="7200" vehsPerHour="3"/>
+    <flow id="flow16" type="truck" from="PVB_J0_J3" begin="0" end="7200" vehsPerHour="5"/>
+    <!-- Thêm các luồng khác tương ứng với dữ liệu lưu lượng -->
+</routes>
