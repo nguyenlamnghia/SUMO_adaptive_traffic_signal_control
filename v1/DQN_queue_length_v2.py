@@ -19,10 +19,10 @@ else:
 
 # Cấu hình SUMO
 Sumo_config = [
-    'sumo-gui',
+    'sumo',
     '-c', './DATN/datn.sumocfg',
     '--step-length', '0.10',
-    '--delay', '1000',
+    # '--delay', '1000',
     '--lateral-resolution', '0.1'
 ]
 
@@ -34,7 +34,7 @@ current_phase = 0
 ALPHA = 0.1
 GAMMA = 0.9
 ACTIONS = [0, 1, 2, 3]
-GREEN_TIMES = [10, 20, 30, 40]
+GREEN_TIMES = [15, 25, 35, 45]
 EPSILON = 1.0
 EPSILON_MIN = 0.01
 EPSILON_DECAY = 0.995

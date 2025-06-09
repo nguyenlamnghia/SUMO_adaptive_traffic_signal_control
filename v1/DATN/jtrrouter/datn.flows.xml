@@ -1,10 +1,10 @@
 <routes>
-    <flow id="flow1" type="car" from="HQC_J4_J3" begin="0" end="7200" vehsPerHour="254"/>
+    <flow id="flow1" type="car" from="HQC_J4_J3" begin="0" end="7200" vehsPerHour="100"/>
     <flow id="flow2" type="motorbike" from="HQC_J4_J3" begin="0" end="7200" vehsPerHour="525"/>
     <flow id="flow3" type="bus" from="HQC_J4_J3" begin="0" end="7200" vehsPerHour="5"/>
     <flow id="flow4" type="truck" from="HQC_J4_J3" begin="0" end="7200" vehsPerHour="1"/>
 
-    <flow id="flow5" type="car" from="HQC_J2_J3" begin="0" end="7200" vehsPerHour="280"/>
+    <flow id="flow5" type="car" from="HQC_J2_J3" begin="0" end="7200" vehsPerHour="100"/>
     <flow id="flow6" type="motorbike" from="HQC_J2_J3" begin="0" end="7200" vehsPerHour="612"/>
     <flow id="flow7" type="bus" from="HQC_J2_J3" begin="0" end="7200" vehsPerHour="6"/>
     <flow id="flow8" type="truck" from="HQC_J2_J3" begin="0" end="7200" vehsPerHour="2"/>

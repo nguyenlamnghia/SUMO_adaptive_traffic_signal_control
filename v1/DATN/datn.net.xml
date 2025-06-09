@@ -109,7 +109,7 @@
     </edge>
 
     <tlLogic id="clusterJ12_J2_J3_J6_#2more" type="static" programID="0" offset="0">
-        <phase duration="50" state="GGGGrrrrGGGGrrrr"/>
+        <!-- <phase duration="50" state="GGGGrrrrGGGGrrrr"/>
         <phase duration="3"  state="yyyyrrrryyyyrrrr"/>
         <phase duration="1"  state="rrrrrrrrrrrrrrrr"/>
         <phase duration="30" state="rrrrrGGGrrrrrGGG"/>
@@ -117,7 +117,15 @@
         <phase duration="1"  state="rrrrrGrrrrrrrGrr"/>
         <phase duration="20" state="rrrrGGrrrrrrGGrr"/>
         <phase duration="3"  state="rrrryyrrrrrryyrr"/>
-        <phase duration="1"  state="rrrrrrrrrrrrrrrr"/>
+        <phase duration="1"  state="rrrrrrrrrrrrrrrr"/> -->
+        <phase duration="30"  state="GGGGGrrrGGGGGrrr"/>
+        <phase duration="3"  state="yyyyyrrryyyyyrrr"/>
+        <phase duration="1" state="rrrrrrrrrrrrrrrr"/>
+        <phase duration="30"  state="rrrrrGGGrrrrrGGG"/>
+        <phase duration="3"  state="rrrrryyyrrrrryyy"/>
+        <phase duration="1" state="rrrrrrrrrrrrrrrr"/>
+
+
     </tlLogic>
 
     <junction id="J0" type="dead_end" x="-4.51" y="155.37" incLanes="" intLanes="" shape="0.44,155.34 -9.46,155.40"/>

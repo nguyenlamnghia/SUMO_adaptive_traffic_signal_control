@@ -39,15 +39,15 @@ Sumo_config = [
 # ==========================================================
 # Step 6: Define Constants & Parameters
 # ==========================================================
-ACTIONS = [0, 1, 2, 3]
-GREEN_TIMES = [10, 20, 30, 40]
+ACTIONS = [0, 1, 2, 3, 4]
+GREEN_TIMES = [15, 25, 35, 45, 55]
 
-ALPHA = 0.1
-GAMMA = 0.9
-EPSILON = 0.0
-EPSILON_MIN = 0.01
-EPSILON_DECAY = 0.998
-BATCH_SIZE = 32
+ALPHA = 0.1 # Learning rate
+GAMMA = 0.9 # Discount factor
+EPSILON = 1.0 # Exploration rate
+EPSILON_MIN = 0.01 # Minimum exploration rate
+EPSILON_DECAY = 0.998 # Decay rate for exploration
+BATCH_SIZE = 32 # Batch size for training
 # BATCH_SIZE = 8  # Giảm kích thước batch để tránh lỗi OOM trên GPU
 REPLAY_BUFFER_SIZE = 10000
 TARGET_UPDATE_FREQ = 10
@@ -57,13 +57,13 @@ TLS_ID = "clusterJ12_J2_J3_J6_#2more"
 YELLOW_TIME = 3
 RED_TIME = 1
 
-EPOCHS = 10  # Tăng số epoch để minh họa
+EPOCHS = 12  # Tăng số epoch để minh họa
 STEP_LENGTH = 0.1
 SEC_TO_STEP = int(1 / STEP_LENGTH)
 TIME_SIMULATION = 7200
 STEP_SIMULATION = TIME_SIMULATION * SEC_TO_STEP
 
-state_size = 9
+state_size = 17
 action_size = len(ACTIONS)
 replay_buffer = deque(maxlen=REPLAY_BUFFER_SIZE)
 
@@ -125,12 +125,19 @@ class QuadDQN:
         return dqn
 
 def get_state():
-    queue_values = [get_lane_occupancy(d) for d in detectors]
+    occupancy_values = [get_lane_occupancy(d) for d in detectors]
+    mean_speech_values = [get_lane_mean_speech(d) for d in detectors]
+    print(f"OCUPANCY: {occupancy_values}")
+    print(f"MEAN SPEECH: {mean_speech_values}")
     current_phase = get_current_phase(TLS_ID)
-    return np.array(queue_values + [current_phase])
+    return np.array(occupancy_values +mean_speech_values + [current_phase])
 
-def get_reward(before_avg_waiting_time, after_avg_waiting_time):
-    return before_avg_waiting_time - after_avg_waiting_time
+def get_reward(before_total_vehicle, after_total_vehicle):
+    return before_total_vehicle - after_total_vehicle
+    # return -(before_total_vehicle - after_total_vehicle)
+
+def get_lane_mean_speech(detector_id):
+    return traci.lanearea.getLastStepMeanSpeed(detector_id)
 
 def get_total_waiting_time(_):
     return sum(traci.lane.getWaitingTime(d) for d in detectors)
@@ -167,7 +174,7 @@ def apply_action(current_phase, green_time):
     for _ in range(RED_TIME * SEC_TO_STEP):
         traci.simulationStep()
 
-    next_phase = (current_phase + 3) % 9
+    next_phase = (current_phase + 3) % 6
     traci.trafficlight.setPhase(TLS_ID, next_phase)
 
 def get_total_vehicle_in_junction(junction_id):
@@ -208,6 +215,9 @@ for i in range(EPOCHS):
 
     while step < STEP_SIMULATION:
         before_avg_waiting_time = get_avg_waiting_time()
+        before_total_vehicle = get_total_vehicle_in_lane()
+        print("_______________________________________")
+        print("BEFORE:")
         state = get_state()
         action = dqn.get_action(state)
 
@@ -216,6 +226,8 @@ for i in range(EPOCHS):
         apply_action(current_phase, green_time)
 
         after_avg_waiting_time = get_avg_waiting_time()
+        after_total_vehicle = get_total_vehicle_in_lane()
+        print("AFTER:")
         new_state = get_state()
         reward = get_reward(before_avg_waiting_time, after_avg_waiting_time)
         step += (green_time + YELLOW_TIME + RED_TIME) * SEC_TO_STEP
@@ -243,7 +255,7 @@ for i in range(EPOCHS):
 
         EPSILON = max(EPSILON_MIN, EPSILON * EPSILON_DECAY)
 
-        print(f"Step: {step}, Cycle: {cycle_count}, Action: {action}, Reward: {reward:.2f}, Epsilon: {EPSILON:.2f}, Cumulative: {cumulative_reward:.2f}")
+        print(f"Step: {step}, Phase: {current_phase}, Cycle: {cycle_count}, Action: {action}, Reward: {reward:.2f}, Epsilon: {EPSILON:.2f}, Cumulative: {cumulative_reward:.2f}")
 
         if cycle_count % RECORD_DATA_FREQ == 0:
             epoch_data[i]['cycle_count'].append(cycle_count)
@@ -256,7 +268,7 @@ for i in range(EPOCHS):
     
     traci.close()
 
-# dqn.save("quad_dqn.keras")
+dqn.save("quad_dqn.keras")
 
 # ==========================================================
 # Step 9: Close SUMO and Visualize
